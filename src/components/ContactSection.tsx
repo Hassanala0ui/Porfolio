@@ -49,19 +49,19 @@ export function ContactSection() {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/ahmed-ashraf-59a207234',
+      url: 'https://www.linkedin.com/in/el-hassane-taibi-alaoui/',
       icon: Linkedin,
       color: 'hover:text-blue-600'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/ahmedashraf792002',
+      url: 'https://github.com/Hassanala0ui',
       icon: Github,
       color: 'hover:text-gray-900 dark:hover:text-gray-100'
     },
     {
       name: 'Kaggle',
-      url: 'https://www.kaggle.com/ahmedashrafahmed',
+      url: 'https://www.kaggle.com',
       icon: KaggleIcon,
       color: 'hover:text-blue-500'
     }
@@ -71,19 +71,19 @@ export function ContactSection() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'ahmedashraf79200@gmail.com',
-      href: 'mailto:ahmedashraf79200@gmail.com'
+      value: 'taibialaouihassan@gmail.com',
+      href: 'mailto:taibialaouihassan@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+20 109-7436-928',
-      href: 'tel:+201097436928'
+      value: '+33 652145446',
+      href: 'tel:+33652145446'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Shebin Al-Qanater, Al-Qalyubia, Egypt',
+      value: 'Rue de Fief à Cavan, Courdimanche, France',
       href: null
     }
   ];
@@ -98,11 +98,11 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Contactez-moi</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm always interested in discussing new opportunities, collaborations, 
-            or just chatting about AI and machine learning. Feel free to reach out!
+            Je suis toujours ouvert à de nouvelles opportunités, collaborations ou simples échanges autour de la Data Science, de l’IA et du développement logiciel.
+            N’hésitez pas à me contacter !
           </p>
         </motion.div>
 

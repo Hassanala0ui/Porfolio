@@ -18,14 +18,8 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             AI & ML Engineer
           </div>
-          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-            <span>© {currentYear} Made with</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>and AI</span>
-          </div>
           <div className="text-xs text-muted-foreground max-w-md mx-auto">
-            This portfolio showcases my passion for artificial intelligence and machine learning. 
-            Built with React, Tailwind CSS, and a lot of enthusiasm for the future of AI.
+            Ce portfolio témoigne de ma passion pour l'intelligence artificielle et l'apprentissage automatique. Conçu avec React, Tailwind CSS, et une grande conviction quant au potentiel de l'IA.
           </div>
         </motion.div>
       </div>

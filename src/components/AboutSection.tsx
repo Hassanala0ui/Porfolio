@@ -58,9 +58,9 @@ export function AboutSection() {
   ];
 
   const achievements = [
-    { number: '100+', label: 'Projects Completed', description: 'AI & ML solutions' },
-    { number: '2', label: 'Research Papers', description: 'Published in IEEE' },
-    { number: '2', label: 'Internships', description: 'AI & Data Science experience' }
+    { number: '+50', label: 'Projets Réalisés', description: 'Solutions IA & ML' },
+    { number: '1', label: 'Alternance en cours', description: 'Développeur' },
+    { number: '2', label: 'Stages', description: "Expérience en IA & Data Science" }
   ];
 
   const containerVariants = {
@@ -95,11 +95,11 @@ export function AboutSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl mb-6 bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
-            About Me
+            À Propos de Moi
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            AI & ML Engineer with a strong foundation in AI and Computer Science. Specializes in designing, developing, and optimizing ML and DL models to tackle complex problems in NLP, CV, and predictive analytics. Proficient in transformer-based architectures (LLMs) and experienced in MLOps for building scalable, production-ready AI systems. Passionate about innovation, data-driven decision-making, and delivering impactful, business-focused AI solutions.
+            Étudiant-ingénieur en Data Science et IA, je maîtrise les fondamentaux du machine learning, du traitement de données et du développement fullstack. Mon objectif est de concevoir des systèmes intelligents capables de transformer les données en solutions concrètes et performantes. Passionné par l’apprentissage continu, je cherche à allier excellence technique et impact réel.
           </p>
         </motion.div>
 
@@ -137,28 +137,35 @@ export function AboutSection() {
           >
             <Card className="h-full">
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Professional Journey</h3>
+                <h3 className="text-2xl mb-6">Expérience Professionnelle</h3>
                 <div className="space-y-6 text-muted-foreground">
                   <div>
-                    <h4 className="text-lg text-foreground mb-2">AI & ML Engineer Intern @ Electropi</h4>
-                    <p className="text-sm mb-2">Aug 2023 – Dec 2023</p>
+                    <h4 className="text-lg text-foreground mb-2">Développeur Full Stack (Alternance) - SpinalCom</h4>
+                    <p className="text-sm mb-2">sep 2024 – aug 2027</p>
                     <p>
-                      Worked on developing and implementing machine learning models for real-world applications across 
-                      multiple domains including NLP, Deep Learning, and Computer Vision projects. Gained hands-on 
-                      experience with the complete ML pipeline from data preprocessing to model deployment, contributing 
-                      to innovative AI solutions in a dynamic startup environment. Developed text processing systems, 
-                      implemented neural networks for image recognition, and built predictive models using advanced 
-                      deep learning techniques.
+                     <p> - Conception et développement de dashboards interactifs pour la visualisation et l’analyse temps réel de données IoT industrielles.</p>
+                     <p> - Intégration de solutions de monitoring et d’alerting automatisées, améliorant la fiabilité et la réactivité des systèmes.</p>
+                     <p> - Collaboration avec les équipes Data et Produit pour industrialiser les modèles d’analyse et optimiser la restitution des insights via des interfaces web modernes.</p>
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg text-foreground mb-2">Data Science Intern @ TechnoHacks EduTech</h4>
-                    <p className="text-sm mb-2">Aug 2023 – Oct 2023</p>
+                    <h4 className="text-lg text-foreground mb-2">Stage Data Analyst - Telligo</h4>
+                    <p className="text-sm mb-2">juin 2024 – août 2024</p>
                     <p>
-                      Applied data science techniques to analyze educational data and extract meaningful insights. 
-                      Developed data visualizations and predictive models to support decision-making processes, 
-                      enhancing understanding of student performance and learning patterns.
+                      <p> - Création de dashboards interactifs (Power BI / Tableau / Python) pour le suivi des indicateurs clés (taux de satisfaction, inscriptions, fréquentation).</p>
+                      <p> - Mise en place de scripts d’automatisation pour accélérer la collecte et la préparation des données (Python, Pandas, SQL).</p>
+                      <p> - Présentation des résultats à l’équipe marketing pour appuyer la prise de décision basée sur les données.</p>
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg text-foreground mb-2">Stage d'observation - Renault Tanger</h4>
+                    <p className="text-sm mb-2">juillet 2023 – août 2023</p>
+                    <p>
+                      <p> - Participation à la collecte et à l’analyse de données de performance des lignes de montage.</p>
+                      <p> - Découverte du fonctionnement d’une usine 4.0 et des interactions entre mécanique, automatisme et data.</p>
+                      <p> - Observation du flux de production, de la robotique et de l’organisation industrielle.</p>
                     </p>
                   </div>
                 </div>
@@ -171,14 +178,14 @@ export function AboutSection() {
                 <h3 className="text-2xl mb-6">Education & Certifications</h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-lg mb-1">Bachelor of Computer Science and Artificial Intelligence</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Benha University, Department of Artificial Intelligence</p>
-                    <p className="text-sm text-muted-foreground mb-1">Graduated: 2024 • GPA: 3.76 / 4.0</p>
+                    <h4 className="text-lg mb-1">Cycle d'ingénieur En Intelligence Artificielle et Data Science (en alternance)</h4>
+                    <p className="text-sm text-muted-foreground mb-1">ESIEA</p>
+                    <p className="text-sm text-muted-foreground mb-1">Paris</p>
                   </div>
                   <div>
-                    <h4 className="text-lg mb-1">AI / ML Training Program</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Information Technology Institute (ITI), Menoufia, Egypt</p>
-                    <p className="text-sm text-muted-foreground">Aug 2023 – Oct 2023</p>
+                    <h4 className="text-lg mb-1">Mobilité internationale</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Wrexham University, Royaume-Uni</p>
+                    <p className="text-sm text-muted-foreground">mai 2025 – août 2025</p>
                   </div>
                   <div className="pt-2">
                     <h5 className="text-md mb-3">Soft Skills</h5>
@@ -248,7 +255,7 @@ export function AboutSection() {
             {/* Tools & Technologies */}
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Tools & Technologies</h3>
+                <h3 className="text-2xl mb-6">outils et Technologies</h3>
                 <div className="space-y-6">
                   {tools.map((category, categoryIndex) => (
                     <motion.div
@@ -288,29 +295,31 @@ export function AboutSection() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <Card className="bg-gradient-to-r from-primary/5 to-accent/5">
+            {/* 
+            <Card className="bg-gradient-to-r from-primary/5 to-accent/5"></Card>
             <CardContent className="p-8">
               <h3 className="text-2xl mb-6 text-center">Research & Publications</h3>
               <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto">
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-lg mb-2">• Explainable ML for Liver Disease Detection</h4>
-                    <p className="text-sm text-muted-foreground mb-1"><strong>IEEE, Oct 2024</strong></p>
-                    <p className="text-sm text-muted-foreground">
-                      Integrated SHAP, LIME, and Anchors to improve interpretability in diagnosing FLD and HBV.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-lg mb-2">• ML-Based Anomaly Detection in Healthcare</h4>
-                    <p className="text-sm text-muted-foreground mb-1"><strong>IEEE, Oct 2024</strong></p>
-                    <p className="text-sm text-muted-foreground">
-                      Survey of ML techniques (e.g., autoencoders, XGBoost) for detecting anomalies in healthcare IoT and WSNs.
-                    </p>
-                  </div>
+              <div className="space-y-4">
+                <div>
+                <h4 className="text-lg mb-2">• Explainable ML for Liver Disease Detection</h4>
+                <p className="text-sm text-muted-foreground mb-1"><strong>IEEE, Oct 2024</strong></p>
+                <p className="text-sm text-muted-foreground">
+                  Integrated SHAP, LIME, and Anchors to improve interpretability in diagnosing FLD and HBV.
+                </p>
+                </div>
+                <div>
+                <h4 className="text-lg mb-2">• ML-Based Anomaly Detection in Healthcare</h4>
+                <p className="text-sm text-muted-foreground mb-1"><strong>IEEE, Oct 2024</strong></p>
+                <p className="text-sm text-muted-foreground">
+                  Survey of ML techniques (e.g., autoencoders, XGBoost) for detecting anomalies in healthcare IoT and WSNs.
+                </p>
                 </div>
               </div>
+              </div>
             </CardContent>
-          </Card>
+            </Card>
+            */}
         </motion.div>
       </div>
     </section>

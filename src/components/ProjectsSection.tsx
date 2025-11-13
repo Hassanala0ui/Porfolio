@@ -411,7 +411,7 @@ export function ProjectsSection() {
           rel="noopener noreferrer"
         >
           <Github className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
-          View All My Projects
+          Voir tous mes projets
           <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </a>
       </Button>
@@ -429,13 +429,12 @@ export function ProjectsSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl mb-6 bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
-            Featured Projects
+            Projets à la Une
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Showcasing 100+ AI & ML projects across machine learning, deep learning, computer vision, 
-            natural language processing, generative AI, and business intelligence. Each project demonstrates 
-            hands-on implementation with real-world applications.
+           Une collection de projets en Data Science, Intelligence Artificielle et Développement Fullstack, illustrant mes compétences techniques et ma capacité à résoudre des problèmes concrets.
+           De l’analyse de données à la modélisation prédictive, en passant par la conception de tableaux de bord web, chaque projet met en avant une approche pratique de l’IA et de l’ingénierie logicielle.
           </p>
         </motion.div>
 

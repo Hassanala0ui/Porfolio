@@ -27,8 +27,7 @@ export function CVSection() {
           <h2 className="text-3xl md:text-4xl mb-4">Curriculum Vitae</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Download my complete CV to learn more about my professional experience, 
-            education, certifications, and accomplishments in the field of AI and machine learning.
+            Télécharger mon CV complet pour en savoir plus sur mon parcours académique, mes expériences professionnelles, mes certifications et mes réalisations dans les domaines de la Data Science et de l’Intelligence Artificielle.
           </p>
         </motion.div>
 
@@ -70,8 +69,7 @@ export function CVSection() {
                     viewport={{ once: true }}
                     className="text-muted-foreground mb-6 max-w-md"
                   >
-                    Preview of my professional CV showcasing my experience 
-                    in AI & Machine Learning engineering and internships.
+                    Aperçu de mon CV professionnel présentant mon expérience en ingénierie IA et Data science ainsi que mes stages.
                   </motion.p>
                   
                   <motion.div
@@ -88,25 +86,17 @@ export function CVSection() {
                       </div>
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        Professional Experience
+                        Expérience Professionnelle
                       </div>
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        Technical Skills
+                        Compétences Techniques  
                       </div>
                     </div>
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        Research Publications
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        Projects & Achievements
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        References
+                        Projets & Réalisations
                       </div>
                     </div>
                   </motion.div>
@@ -122,19 +112,19 @@ export function CVSection() {
                 >
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div>
-                      <h4 className="text-lg mb-2">View & Download Complete CV</h4>
+                      <h4 className="text-lg mb-2">Voir et télécharger le CV complet</h4>
                       <p className="text-sm text-muted-foreground">
-                        Get the full version with detailed information about my background and experience.
+                        Obtenez la version complète avec des informations détaillées sur mon parcours et mon expérience.
                       </p>
                     </div>
                     <div className="flex gap-3">
                       <Button onClick={viewCV} variant="outline" size="lg" className="flex items-center gap-2">
                         <ExternalLink className="w-4 h-4" />
-                        View Online
+                        Voir en ligne
                       </Button>
                       <Button onClick={downloadCV} size="lg" className="flex items-center gap-2">
                         <Download className="w-4 h-4" />
-                        Download
+                        Télécharger
                       </Button>
                     </div>
                   </div>
@@ -154,25 +144,25 @@ export function CVSection() {
             <Card>
               <CardContent className="p-6 text-center">
                 <div className="text-2xl mb-2">2</div>
-                <div className="text-sm text-muted-foreground">Internship Experiences</div>
+                <div className="text-sm text-muted-foreground">Stages professionnels</div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-2xl mb-2">100+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
+                <div className="text-2xl mb-2">+50</div>
+                <div className="text-sm text-muted-foreground">Projets réalisés</div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-2xl mb-2">2</div>
-                <div className="text-sm text-muted-foreground">Research Papers</div>
+                <div className="text-2xl mb-2">1</div>
+                <div className="text-sm text-muted-foreground">Alternance en cours</div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-2xl mb-2">5+</div>
-                <div className="text-sm text-muted-foreground">AI Technologies</div>
+                <div className="text-2xl mb-2">+5</div>
+                <div className="text-sm text-muted-foreground">Technologies IA</div>
               </CardContent>
             </Card>
           </motion.div>

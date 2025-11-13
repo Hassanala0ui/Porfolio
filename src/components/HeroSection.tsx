@@ -20,7 +20,7 @@ export function HeroSection() {
   };
 
   const downloadCV = () => {
-    window.open('https://flowcv.com/resume/sgweuv5l0t', '_blank');
+    window.open('https://flowcv.com/resume/rdkcbq0k8wha', '_blank');
   };
 
   const highlights = [
@@ -64,7 +64,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 leading-tight"
             >
-              Hi, I'm{' '}
+              Bonjour, je suis{' '}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Hassan Alaoui Taibi
               </span>
@@ -76,7 +76,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6"
             >
-              AI & ML Engineer
+              Étudiant-ingénieur en Data Science et Intelligence Artificielle
             </motion.h2>
             
             <motion.p
@@ -85,7 +85,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl"
             >
-              AI & ML Engineer with expertise in NLP, Computer Vision, and predictive analytics. Skilled in transformer-based architectures (LLMs) and MLOps for scalable, production-ready AI systems.
+              Futur ingénieur en Data Science et IA, je combine rigueur analytique et esprit créatif pour concevoir des projets innovants en machine learning, développement fullstack et ingénierie logicielle. Toujours en quête d’amélioration, j’aime apprendre, expérimenter et transformer mes connaissances en solutions concrètes.
             </motion.p>
 
             {/* Professional Highlights */}
@@ -96,8 +96,8 @@ export function HeroSection() {
               className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10"
             >
               {[
-                { icon: Briefcase, text: '100+ Projects Completed' },
-                { icon: Award, text: '2 Research Papers' }
+                { icon: Briefcase, text: '+50 Projets Réalisés' },
+                { icon: Award, text: '2 Articles de Recherche' }
               ].map((highlight, index) => (
                 <div 
                   key={index}
@@ -120,7 +120,7 @@ export function HeroSection() {
                 size="lg"
                 className="group"
               >
-                View My Work
+                Voir Mes Réalisations
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
@@ -130,7 +130,7 @@ export function HeroSection() {
                 className="group"
               >
                 <Download className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                Download CV
+                Télécharger le CV
               </Button>
               <Button
                 variant="ghost"
@@ -139,7 +139,7 @@ export function HeroSection() {
                 className="group"
               >
                 <Mail className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
-                Get In Touch
+                Me Contacter
               </Button>
             </motion.div>
           </motion.div>
@@ -255,7 +255,7 @@ export function HeroSection() {
               className="w-1 h-3 bg-muted-foreground/30 rounded-full mt-2"
             />
           </motion.div>
-          <div className="text-xs text-muted-foreground mt-2 text-center">Scroll to explore</div>
+          <div className="text-xs text-muted-foreground mt-2 text-center">Explorez en scrollant</div>
         </motion.div>
       </div>
     </section>
