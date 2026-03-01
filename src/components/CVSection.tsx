@@ -143,8 +143,8 @@ export function CVSection() {
           >
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-2xl mb-2">2</div>
-                <div className="text-sm text-muted-foreground">Stages professionnels</div>
+                <div className="text-2xl mb-2">3</div>
+                <div className="text-sm text-muted-foreground">Expériences professionnelles</div>
               </CardContent>
             </Card>
             <Card>

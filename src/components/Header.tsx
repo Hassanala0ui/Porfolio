@@ -116,7 +116,7 @@ export function Header({ activeSection }: HeaderProps) {
             >
               <Badge variant="secondary" className="text-xs bg-green-500/10 text-green-600 dark:text-green-400">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                Available
+                Disponible
               </Badge>
             </motion.div>
 
@@ -175,7 +175,7 @@ export function Header({ activeSection }: HeaderProps) {
               <div className="pt-2 px-3">
                 <Badge variant="secondary" className="text-xs bg-green-500/10 text-green-600 dark:text-green-400">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  Available for opportunities
+                  Disponible pour des opportunités
                 </Badge>
               </div>
             </div>

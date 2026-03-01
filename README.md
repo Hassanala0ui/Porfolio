@@ -1,7 +1,5 @@
 
-  # Data Science & AI Engineer Portfolio (Community)
-
-  This is a code bundle for Data Science & AI Engineer Portfolio . The original project is available at https://www.figma.com/design/53uOrILrhi0HYo32i6kYHf/AI-Engineer-Portfolio--Community-.
+  # Data Science & AI Engineer Portfolio 
 
   ## Running the code
 

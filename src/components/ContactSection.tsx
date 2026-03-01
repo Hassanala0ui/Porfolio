@@ -76,14 +76,14 @@ export function ContactSection() {
     },
     {
       icon: Phone,
-      label: 'Phone',
+      label: 'Téléphone',
       value: '+33 652145446',
       href: 'tel:+33652145446'
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Rue de Fief à Cavan, Courdimanche, France',
+      label: 'Address',
+      value: 'Valenton 94460,  France',
       href: null
     }
   ];
@@ -116,14 +116,14 @@ export function ContactSection() {
           >
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Send a Message</h3>
+                <h3 className="text-2xl mb-6">Envoyez-moi un message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">Nom</Label>
                     <Input
                       id="name"
-                      name="name"
-                      placeholder="Your full name"
+                      name="Nom"
+                      placeholder="Votre nom complet"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -136,7 +136,7 @@ export function ContactSection() {
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="votre.email@exemple.com"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -148,7 +148,7 @@ export function ContactSection() {
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Tell me about your project or just say hello..."
+                      placeholder="Votre message…"
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
@@ -179,7 +179,7 @@ export function ContactSection() {
             {/* Contact Details */}
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Contact Information</h3>
+                <h3 className="text-2xl mb-6">Informations de contact</h3>
                 <div className="space-y-4">
                   {contactInfo.map((item, index) => (
                     <motion.div
@@ -215,7 +215,7 @@ export function ContactSection() {
             {/* Social Links */}
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Connect With Me</h3>
+                <h3 className="text-2xl mb-6">Me contacter</h3>
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => (
                     <motion.a
@@ -240,7 +240,7 @@ export function ContactSection() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Follow me on social media for updates on my latest projects and AI insights.
+                  Suivez-moi sur les réseaux sociaux pour des mises à jour sur mes derniers projets et mes idées sur l’IA.
                 </p>
               </CardContent>
             </Card>
@@ -257,8 +257,7 @@ export function ContactSection() {
                   <div className="text-4xl mb-4">☕</div>
                   <h4 className="text-lg mb-2">Fun Fact</h4>
                   <p className="text-sm text-muted-foreground">
-                    I've consumed over 2,000 cups of coffee while training neural networks. 
-                    Caffeine and gradients - the perfect combination!
+                    Derrière chaque projet réussi : des heures d’apprentissage, d’expérimentation et quelques litres de café
                   </p>
                 </CardContent>
               </Card>

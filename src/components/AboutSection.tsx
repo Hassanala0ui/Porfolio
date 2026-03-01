@@ -8,58 +8,58 @@ export function AboutSection() {
     { 
       name: 'Machine Learning', 
       icon: Brain,
-      description: 'Advanced ML algorithms and model optimization'
+      description: 'Algorithmes d’apprentissage automatique et optimisation de modèles'
     },
     { 
       name: 'Deep Learning', 
       icon: Brain,
-      description: 'Neural networks and transformer architectures'
+      description: 'Réseaux de neurones et architectures modernes (CNN, Transformers)'
     },
     { 
-      name: 'Computer Vision', 
+      name: 'Vision par ordinateur', 
       icon: Eye,
-      description: 'Image processing and visual recognition systems'
+      description: 'Traitement d’images et systèmes de reconnaissance visuelle'
     },
     { 
-      name: 'Natural Language Processing', 
+      name: 'Traitement du langage naturel (NLP)', 
       icon: MessageSquare,
-      description: 'Text analysis and language model fine-tuning'
+      description: 'Analyse de texte et fine-tuning de modèles linguistiques'
     },
     { 
-      name: 'Data Processing & Analytics', 
+      name: 'Traitement et analyse de données', 
       icon: Database,
-      description: 'Large-scale data processing and statistical analysis'
+      description: 'Manipulation de données à grande échelle et analyse statistique'
     },
     { 
-      name: 'MLOps & Deployment', 
+      name: 'MLOps & Déploiement', 
       icon: Settings,
-      description: 'Production ML systems and pipeline automation'
+      description: 'Mise en production de modèles ML et automatisation des pipelines'
     },
     { 
-      name: 'Data Visualization', 
+      name: 'Visualisation de données', 
       icon: PieChart,
-      description: 'Interactive dashboards and analytical insights'
+      description: 'Dashboards interactifs et analyses de données'
     },
     { 
-      name: 'Research & Development', 
+      name: 'Recherche & Développement', 
       icon: FlaskConical,
-      description: 'Innovation and cutting-edge AI research'
+      description: 'Veille technologique et expérimentation en intelligence artificielle'
     }
   ];
 
   const tools = [
-    { category: 'Programming Languages', items: ['Python', 'C++', 'Java'] },
+    { category: 'Langages de programmation', items: ['Python', 'R', 'C++', 'Java','JavaScript','TypeScript','POO'] },
     { category: 'ML & DL', items: ['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn'] },
     { category: 'NLP & LLMs', items: ['NLTK', 'SpaCy', 'Transformers', 'LangChain', 'LlamaIndex'] },
-    { category: 'Computer Vision', items: ['OpenCV', 'Ultralytics YOLO'] },
-    { category: 'Data Processing & Analytics', items: ['Pandas', 'NumPy', 'SciPy', 'SQL'] },
-    { category: 'Data Visualization', items: ['Matplotlib', 'Seaborn', 'Plotly', 'Power BI'] },
-    { category: 'MLOps & Deployment', items: ['MLflow', 'CML', 'Streamlit', 'Flask', 'FastAPI'] }
+    { category: 'Vision par ordinateur', items: ['OpenCV', 'Ultralytics YOLO'] },
+    { category: 'Traitement et analyse de données', items: ['Pandas', 'NumPy', 'SciPy', 'SQL','MongoDB', "Neo4j"] },
+    { category: 'Visualisation de données', items: ['Matplotlib', 'Seaborn', 'Plotly', 'Power BI'] },
+    { category: 'MLOps & Déploiement', items: ['MLflow','Kubernetes','Docker', 'CML', 'Streamlit', 'Flask', 'FastAPI'] }
   ];
 
   const achievements = [
-    { number: '+50', label: 'Projets Réalisés', description: 'Solutions IA & ML' },
-    { number: '1', label: 'Alternance en cours', description: 'Développeur' },
+    { number: '+50', label: 'Projets Réalisés', description: 'Solutions Data Science & IA' },
+    { number: '1', label: 'Alternance en cours', description: 'Développeur Fullstack' },
     { number: '2', label: 'Stages', description: "Expérience en IA & Data Science" }
   ];
 
@@ -141,22 +141,23 @@ export function AboutSection() {
                 <div className="space-y-6 text-muted-foreground">
                   <div>
                     <h4 className="text-lg text-foreground mb-2">Développeur Full Stack (Alternance) - SpinalCom</h4>
-                    <p className="text-sm mb-2">sep 2024 – aug 2027</p>
+                    <p className="text-sm mb-2">Septembre 2024 – Présent</p>
                     <p>
-                     <p> - Conception et développement de dashboards interactifs pour la visualisation et l’analyse temps réel de données IoT industrielles.</p>
-                     <p> - Intégration de solutions de monitoring et d’alerting automatisées, améliorant la fiabilité et la réactivité des systèmes.</p>
-                     <p> - Collaboration avec les équipes Data et Produit pour industrialiser les modèles d’analyse et optimiser la restitution des insights via des interfaces web modernes.</p>
+                      <p>Développement d'interfaces interactives pour des jumeaux numériques, permettant la restitution de données complexes.</p>
+                      <p> - Conception et développement de dashboards interactifs pour la visualisation et l’analyse temps réel de données IoT industrielles.</p>
+                      <p> - Implémentation de modèles de machine learning pour la détection d’anomalies et la maintenance prédictive, améliorant la performance opérationnelle.</p>
+                      <p> - Intégration de solutions de monitoring et d’alerting automatisées, améliorant la fiabilité et la réactivité des systèmes.</p>
+                      <p> - Collaboration avec les équipes Data et Produit pour industrialiser les modèles d’analyse et optimiser la restitution des insights via des interfaces web modernes.</p>
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg text-foreground mb-2">Stage Data Analyst - Telligo</h4>
+                    <h4 className="text-lg text-foreground mb-2">Telligo</h4>
                     <p className="text-sm mb-2">juin 2024 – août 2024</p>
                     <p>
-                      <p> - Création de dashboards interactifs (Power BI / Tableau / Python) pour le suivi des indicateurs clés (taux de satisfaction, inscriptions, fréquentation).</p>
-                      <p> - Mise en place de scripts d’automatisation pour accélérer la collecte et la préparation des données (Python, Pandas, SQL).</p>
-                      <p> - Présentation des résultats à l’équipe marketing pour appuyer la prise de décision basée sur les données.</p>
-                    </p>
+                      <p> Coordination logistique, encadrement d’équipe et gestion des plannings pour des
+                          groupes de plus de 50 participants.</p>
+                     </p>
                   </div>
 
                   <div>
@@ -190,7 +191,7 @@ export function AboutSection() {
                   <div className="pt-2">
                     <h5 className="text-md mb-3">Soft Skills</h5>
                     <div className="flex flex-wrap gap-2">
-                      {['Communication', 'Problem Solving', 'Teamwork', 'Time Management'].map((skill) => (
+                      {['Communication', 'Problem Solving', 'Teamwork', 'Time Management', 'Adaptability'].map((skill) => (
                         <Badge key={skill} variant="outline" className="text-xs">
                           {skill}
                         </Badge>
@@ -213,7 +214,7 @@ export function AboutSection() {
             {/* Core Competencies - Compact Modern Design */}
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-2xl mb-4">Core Competencies</h3>
+                <h3 className="text-2xl mb-4">Compétences clés</h3>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
                   {skills.map((skill, index) => (
                     <motion.div
@@ -255,7 +256,7 @@ export function AboutSection() {
             {/* Tools & Technologies */}
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">outils et Technologies</h3>
+                <h3 className="text-2xl mb-6">Outils et Technologies</h3>
                 <div className="space-y-6">
                   {tools.map((category, categoryIndex) => (
                     <motion.div

@@ -55,7 +55,7 @@ export function HeroSection() {
               className="inline-flex items-center gap-2 bg-muted/50 rounded-full px-4 py-2 mb-6"
             >
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span className="text-sm">Available for new opportunities</span>
+              <span className="text-sm">Disponible pour des opportunités</span>
             </motion.div>
 
             <motion.h1
@@ -97,7 +97,7 @@ export function HeroSection() {
             >
               {[
                 { icon: Briefcase, text: '+50 Projets Réalisés' },
-                { icon: Award, text: '2 Articles de Recherche' }
+                { icon: Award, text: '3 hackathon winner ' }
               ].map((highlight, index) => (
                 <div 
                   key={index}
@@ -183,7 +183,7 @@ export function HeroSection() {
               >
                 <div className="text-center">
                   <div className="text-2xl mb-1">🏆</div>
-                  <div className="text-xs">AI Expert</div>
+                  <div className="text-xs">AI & Data Enthusiast</div>
                 </div>
               </motion.div>
               
@@ -202,8 +202,8 @@ export function HeroSection() {
                 className="absolute -bottom-6 -left-6 bg-background border-4 border-accent/20 rounded-2xl p-4 shadow-xl"
               >
                 <div className="text-center">
-                  <div className="text-lg mb-1">100+</div>
-                  <div className="text-xs">Projects</div>
+                  <div className="text-lg mb-1">+50</div>
+                  <div className="text-xs">Projets</div>
                 </div>
               </motion.div>
 
@@ -230,7 +230,8 @@ export function HeroSection() {
                 <div className="flex gap-2">
                   <Badge variant="outline" className="text-xs">Scikit-Learn</Badge>
                   <Badge variant="outline" className="text-xs">MLOps</Badge>
-                  <Badge variant="outline" className="text-xs">Flask</Badge>
+                  <Badge variant="outline" className="text-xs">SQL</Badge>
+                  <Badge variant="outline" className="text-xs">Docker</Badge>
                 </div>
               </motion.div>
             </motion.div>
