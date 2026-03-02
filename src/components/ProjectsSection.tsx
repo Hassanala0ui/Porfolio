@@ -13,7 +13,7 @@ interface Project {
   image: string;
   technologies: string[];
   githubUrl: string;
-  category: 'ml' | 'dl' | 'cv' | 'nlp' | 'autoencoder' | 'gan' | 'generativeai' | 'powerbi' | 'graduation';
+  category: 'ml' | 'dl' | 'cv' | 'nlp' | 'autoencoder' | 'gan' | 'generativeai' | 'powerbi' ;
 }
 
 export function ProjectsSection() {
@@ -278,7 +278,7 @@ export function ProjectsSection() {
     },
 
     // Graduation Project
-    {
+    /**
       id: 'grad1',
       title: 'Alzheimer\'s Detection With Generative AI',
       description: 'Many of us face challenges related to early Alzheimer\'s diagnosis, affecting the opportunities for effective treatment and management. Our project offers an innovative solution based on artificial intelligence technologies to early detect symptoms.',
@@ -286,7 +286,7 @@ export function ProjectsSection() {
       technologies: ['Generative AI', 'Medical Diagnosis', 'Early Detection', 'Deep Learning'],
       githubUrl: '',//https://github.com/ahmedashraf792002/Leader-Graduation-Project
       category: 'graduation'
-    }
+    }**/
   ];
 
   const categories = [
@@ -299,7 +299,7 @@ export function ProjectsSection() {
     { id: 'gan', label: 'GAN', count: projects.filter(p => p.category === 'gan').length },
     { id: 'generativeai', label: 'Generative AI', count: projects.filter(p => p.category === 'generativeai').length },
     { id: 'powerbi', label: 'PowerBI', count: projects.filter(p => p.category === 'powerbi').length },
-    { id: 'graduation', label: 'Graduation', count: projects.filter(p => p.category === 'graduation').length }
+    //{ id: 'graduation', label: 'Graduation', count: projects.filter(p => p.category === 'graduation').length }
   ];
 
   const categoryRepositories = {
@@ -311,7 +311,7 @@ export function ProjectsSection() {
     gan: '',//https://github.com/ahmedashraf792002/GAN-Projects
     generativeai: '',//https://github.com/ahmedashraf792002/Generative-AI-Projects
     powerbi: '',//https://github.com/ahmedashraf792002/PowerBI-Projects
-    graduation: '',//https://github.com/ahmedashraf792002/Leader-Graduation-Project
+   // graduation: '',//https://github.com/ahmedashraf792002/Leader-Graduation-Project
   };
 
   const ProjectCard = ({ project }: { project: Project }) => (
@@ -465,7 +465,7 @@ export function ProjectsSection() {
             </div>
           </TabsContent>
 
-          {['ml', 'dl', 'cv', 'nlp', 'autoencoder', 'gan', 'generativeai', 'powerbi', 'graduation'].map((category) => (
+          {['ml', 'dl', 'cv', 'nlp', 'autoencoder', 'gan', 'generativeai', 'powerbi'].map((category) => (
             <TabsContent key={category} value={category} className="mt-0">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects
