@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Brain, Eye, MessageSquare, BarChart3, Settings, Database, PieChart, FlaskConical, Workflow, Server } from 'lucide-react';
@@ -58,7 +58,7 @@ export function AboutSection() {
   ];
 
   const achievements = [
-    { number: '+50', label: 'Projets Réalisés', description: 'Solutions Data Science & IA' },
+    { number: '28+', label: 'Projets End-to-End', description: 'Data Science, IA & Engineering' },
     { number: '1', label: 'Alternance en cours', description: 'Développeur Fullstack' },
     { number: '2', label: 'Stages', description: "Expérience en IA & Data Science" }
   ];
@@ -99,7 +99,7 @@ export function AboutSection() {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Étudiant-ingénieur en Data Science et IA, je maîtrise les fondamentaux du machine learning, du traitement de données et du développement fullstack. Mon objectif est de concevoir des systèmes intelligents capables de transformer les données en solutions concrètes et performantes. Passionné par l’apprentissage continu, je cherche à allier excellence technique et impact réel.
+            Passionné par la data depuis mes premières lignes de Python, j'ai construit une expertise transversale — du nettoyage de données brutes à la mise en production de modèles ML. En alternance chez SpinalCom, je conçois des solutions data pour des jumeaux numériques IoT. Mon parcours m'a appris que la vraie valeur d'un data scientist réside dans sa capacité à transformer un besoin métier en pipeline technique fiable, de l'extraction à la visualisation.
           </p>
         </motion.div>
 
@@ -140,14 +140,14 @@ export function AboutSection() {
                 <h3 className="text-2xl mb-6">Expérience Professionnelle</h3>
                 <div className="space-y-6 text-muted-foreground">
                   <div>
-                    <h4 className="text-lg text-foreground mb-2">Développeur Full Stack (Alternance) - SpinalCom</h4>
+                    <h4 className="text-lg text-foreground mb-2">Développeur Data & Full Stack (Alternance) — SpinalCom</h4>
                     <p className="text-sm mb-2">Septembre 2024 – Présent</p>
                     <p>
-                      <p>Développement d'interfaces interactives pour des jumeaux numériques, permettant la restitution de données complexes.</p>
-                      <p> - Conception et développement de dashboards interactifs pour la visualisation et l’analyse temps réel de données IoT industrielles.</p>
-                      <p> - Implémentation de modèles de machine learning pour la détection d’anomalies et la maintenance prédictive, améliorant la performance opérationnelle.</p>
-                      <p> - Intégration de solutions de monitoring et d’alerting automatisées, améliorant la fiabilité et la réactivité des systèmes.</p>
-                      <p> - Collaboration avec les équipes Data et Produit pour industrialiser les modèles d’analyse et optimiser la restitution des insights via des interfaces web modernes.</p>
+                      <p> - Développé des dashboards temps réel (Vue.js + Node.js) pour la visualisation de données IoT de jumeaux numériques industriels.</p>
+                      <p> - Implémenté un modèle ML de détection d’anomalies sur flux IoT industriel, intégré en production dans l’environnement SpinalCom.</p>
+                      <p> - Mis en place des solutions de monitoring et d’alerting automatisées, réduisant le temps de réponse aux incidents.</p>
+                      <p> - Collaboré avec les équipes Data et Produit pour industrialiser les pipelines d’analyse et livrer des insights actionnables via des interfaces web modernes.</p>
+
                     </p>
                   </div>
                   
@@ -176,7 +176,7 @@ export function AboutSection() {
             {/* Education & Certifications */}
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Formation & Certifications</h3>
+                <h3 className="text-2xl mb-6">Formation</h3>
                 <div className="space-y-4">
                   <div>
                     <h4 className="text-lg mb-1">Cycle d'ingénieur En Intelligence Artificielle et Data Science (en alternance)</h4>
@@ -184,9 +184,9 @@ export function AboutSection() {
                     <p className="text-sm text-muted-foreground mb-1">Paris</p>
                   </div>
                   <div>
-                    <h4 className="text-lg mb-1">Mobilité internationale</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Wrexham University, Royaume-Uni</p>
-                    <p className="text-sm text-muted-foreground">mai 2025 – août 2025</p>
+                    <h4 className="text-lg mb-1">Mobilité internationale — Wrexham University</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Wrexham University, Royaume-Uni — mai 2025 – août 2025</p>
+                    <p className="text-sm text-muted-foreground">Cours en anglais : Machine Learning avancé, Data Mining, Statistical Learning</p>
                   </div>
                   <div className="pt-2">
                     <h5 className="text-md mb-3">Soft Skills</h5>

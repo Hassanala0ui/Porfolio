@@ -149,8 +149,8 @@ export function CVSection() {
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-2xl mb-2">+50</div>
-                <div className="text-sm text-muted-foreground">Projets réalisés</div>
+                <div className="text-2xl mb-2">28+</div>
+                <div className="text-sm text-muted-foreground">Projets end-to-end</div>
               </CardContent>
             </Card>
             <Card>

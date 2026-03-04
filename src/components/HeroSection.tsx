@@ -85,7 +85,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl"
             >
-              Futur ingénieur en Data Science et IA, je combine rigueur analytique et esprit créatif pour concevoir des projets innovants en machine learning, développement fullstack et ingénierie logicielle. Toujours en quête d’amélioration, j’aime apprendre, expérimenter et transformer mes connaissances en solutions concrètes.
+              Ingénieur Data Science & IA en alternance @ SpinalCom — spécialisé en Machine Learning, Data Engineering et NLP. 28 projets end-to-end, Python · Spark · Power BI · LLMs.
             </motion.p>
 
             {/* Professional Highlights */}
@@ -96,7 +96,7 @@ export function HeroSection() {
               className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10"
             >
               {[
-                { icon: Briefcase, text: '+50 Projets Réalisés' },
+                { icon: Briefcase, text: '28+ Projets End-to-End' },
               ].map((highlight, index) => (
                 <div 
                   key={index}
@@ -201,7 +201,7 @@ export function HeroSection() {
                 className="absolute -bottom-6 -left-6 bg-background border-4 border-accent/20 rounded-2xl p-4 shadow-xl"
               >
                 <div className="text-center">
-                  <div className="text-lg mb-1">+50</div>
+                  <div className="text-lg mb-1">28+</div>
                   <div className="text-xs">Projets</div>
                 </div>
               </motion.div>
