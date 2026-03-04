@@ -20,7 +20,7 @@ export function HeroSection() {
   };
 
   const downloadCV = () => {
-    window.open('https://flowcv.com/resume/rdkcbq0k8wha', '_blank');
+    window.open('https://flowcv.com/resume/spgbeu1hdurc', '_blank');
   };
 
   const highlights = [

@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 
 export function CVSection() {
-  const cvUrl = 'https://flowcv.com/resume/rdkcbq0k8wha';
+  const cvUrl = 'https://flowcv.com/resume/spgbeu1hdurc';
   
   const downloadCV = () => {
     window.open(cvUrl, '_blank');
