@@ -4,6 +4,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { Badge } from './ui/badge';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import LogoImg from '../assets/logo.png';
 
 
 interface HeaderProps {
@@ -69,8 +70,8 @@ export function Header({ activeSection }: HeaderProps) {
               isDark ? 'bg-white' : 'bg-transparent'
             } transition-colors duration-300`}>
               <img 
-                src="/src/assets/new.png"
-                alt="Logo" 
+                src={LogoImg}
+                alt="Logo Hassan Alaoui Taibi" 
                 className="w-full h-full object-cover"
               />
             </div>
