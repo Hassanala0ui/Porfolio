@@ -30,7 +30,7 @@ export function ContactSection() {
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    toast.success('Message sent successfully! I\'ll get back to you soon.');
+    toast.success('Message envoyé avec succès ! Je vous répondrai très bientôt.');
     setFormData({ name: '', email: '', message: '' });
     setIsSubmitting(false);
   };
@@ -82,7 +82,7 @@ export function ContactSection() {
     },
     {
       icon: MapPin,
-      label: 'Address',
+      label: 'Adresse',
       value: 'Valenton 94460,  France',
       href: null
     }
@@ -161,7 +161,7 @@ export function ContactSection() {
                     className="w-full"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
                   </Button>
                 </form>
               </CardContent>
@@ -255,7 +255,7 @@ export function ContactSection() {
               <Card className="bg-gradient-to-r from-primary/5 to-accent/5">
                 <CardContent className="p-8 text-center">
                   <div className="text-4xl mb-4">☕</div>
-                  <h4 className="text-lg mb-2">Fun Fact</h4>
+                  <h4 className="text-lg mb-2">Le saviez-vous ?</h4>
                   <p className="text-sm text-muted-foreground">
                     Derrière chaque projet réussi : des heures d’apprentissage, d’expérimentation et quelques litres de café
                   </p>

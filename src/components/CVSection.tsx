@@ -59,7 +59,7 @@ export function CVSection() {
                     viewport={{ once: true }}
                     className="text-2xl mb-4"
                   >
-                    Hassan Alaoui Taibi - Data Science & AI Engineer
+                    Hassan Alaoui Taibi - Ingénieur Data Science & IA
                   </motion.h3>
                   
                   <motion.p
@@ -82,7 +82,7 @@ export function CVSection() {
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        Education & Certifications
+                        Formation & Certifications
                       </div>
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>

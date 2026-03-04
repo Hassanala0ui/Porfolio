@@ -97,7 +97,6 @@ export function HeroSection() {
             >
               {[
                 { icon: Briefcase, text: '+50 Projets Réalisés' },
-                { icon: Award, text: '3 hackathon winner ' }
               ].map((highlight, index) => (
                 <div 
                   key={index}
@@ -183,7 +182,7 @@ export function HeroSection() {
               >
                 <div className="text-center">
                   <div className="text-2xl mb-1">🏆</div>
-                  <div className="text-xs">AI & Data Enthusiast</div>
+                  <div className="text-xs">Passionné d'IA & Data</div>
                 </div>
               </motion.div>
               

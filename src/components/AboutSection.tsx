@@ -1,60 +1,60 @@
 import { motion } from 'motion/react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { Brain, Eye, MessageSquare, BarChart3, Settings, Database, PieChart, FlaskConical } from 'lucide-react';
+import { Brain, Eye, MessageSquare, BarChart3, Settings, Database, PieChart, FlaskConical, Workflow, Server } from 'lucide-react';
 
 export function AboutSection() {
   const skills = [
     { 
       name: 'Machine Learning', 
       icon: Brain,
-      description: 'Algorithmes d’apprentissage automatique et optimisation de modèles'
+      description: 'Modèles prédictifs, classification, régression et optimisation'
     },
     { 
       name: 'Deep Learning', 
       icon: Brain,
-      description: 'Réseaux de neurones et architectures modernes (CNN, Transformers)'
+      description: 'réseaux de neurones, Transformers, RNN et architectures modernes '
     },
     { 
-      name: 'Vision par ordinateur', 
-      icon: Eye,
-      description: 'Traitement d’images et systèmes de reconnaissance visuelle'
+      name: 'Data Engineering', 
+      icon: Workflow,
+      description: 'Pipelines ETL, Hadoop/HDFS, MapReduce et intégration de sources'
     },
     { 
-      name: 'Traitement du langage naturel (NLP)', 
-      icon: MessageSquare,
-      description: 'Analyse de texte et fine-tuning de modèles linguistiques'
+      name: 'Data Analysis', 
+      icon: BarChart3,
+      description: 'Exploration, nettoyage et analyse statistique de données'
     },
     { 
-      name: 'Traitement et analyse de données', 
-      icon: Database,
-      description: 'Manipulation de données à grande échelle et analyse statistique'
-    },
-    { 
-      name: 'MLOps & Déploiement', 
-      icon: Settings,
-      description: 'Mise en production de modèles ML et automatisation des pipelines'
-    },
-    { 
-      name: 'Visualisation de données', 
+      name: 'Visualisation & BI', 
       icon: PieChart,
-      description: 'Dashboards interactifs et analyses de données'
+      description: 'Tableau, Power BI et dashboards interactifs pour la prise de décision'
     },
     { 
-      name: 'Recherche & Développement', 
-      icon: FlaskConical,
-      description: 'Veille technologique et expérimentation en intelligence artificielle'
+      name: 'Bases de données (SQL & NoSQL)', 
+      icon: Database,
+      description: 'Oracle, PostgreSQL, MongoDB, Neo4j et modélisation de données'
+    },
+    { 
+      name: 'NLP & IA Générative', 
+      icon: MessageSquare,
+      description: 'Analyse de texte, LLMs, RAG et fine-tuning de modèles'
+    },
+    { 
+      name: 'MLOps & DevOps', 
+      icon: Server,
+      description: 'Docker, CI/CD, déploiement de modèles et conteneurisation'
     }
   ];
 
   const tools = [
-    { category: 'Langages de programmation', items: ['Python', 'R', 'C++', 'Java','JavaScript','TypeScript','POO'] },
-    { category: 'ML & DL', items: ['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn'] },
-    { category: 'NLP & LLMs', items: ['NLTK', 'SpaCy', 'Transformers', 'LangChain', 'LlamaIndex'] },
-    { category: 'Vision par ordinateur', items: ['OpenCV', 'Ultralytics YOLO'] },
-    { category: 'Traitement et analyse de données', items: ['Pandas', 'NumPy', 'SciPy', 'SQL','MongoDB', "Neo4j"] },
-    { category: 'Visualisation de données', items: ['Matplotlib', 'Seaborn', 'Plotly', 'Power BI'] },
-    { category: 'MLOps & Déploiement', items: ['MLflow','Kubernetes','Docker', 'CML', 'Streamlit', 'Flask', 'FastAPI'] }
+    { category: 'Langages de programmation', items: ['Python', 'R', 'SQL', 'PL/SQL', 'JavaScript', 'TypeScript', 'C++', 'Java'] },
+    { category: 'ML & DL', items: ['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'XGBoost'] },
+    { category: 'Data Engineering & ETL', items: ['petl', 'Pandas', 'Apache Spark', 'Hadoop HDFS', 'MapReduce', 'Oracle DB', 'PostgreSQL'] },
+    { category: 'Bases de données', items: ['Oracle', 'PostgreSQL', 'MongoDB', 'Neo4j', 'MySQL'] },
+    { category: 'NLP & LLMs', items: ['NLTK', 'SpaCy', 'Transformers', 'LangChain', 'LlamaIndex', 'TextBlob'] },
+    { category: 'Visualisation & BI', items: ['Tableau', 'Power BI', 'Plotly', 'Matplotlib', 'Seaborn', 'Streamlit'] },
+    { category: 'DevOps & Déploiement', items: ['Docker', 'Docker Compose', 'Kubernetes', 'FastAPI', 'Flask', 'Nginx', 'Git'] }
   ];
 
   const achievements = [
@@ -176,7 +176,7 @@ export function AboutSection() {
             {/* Education & Certifications */}
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl mb-6">Education & Certifications</h3>
+                <h3 className="text-2xl mb-6">Formation & Certifications</h3>
                 <div className="space-y-4">
                   <div>
                     <h4 className="text-lg mb-1">Cycle d'ingénieur En Intelligence Artificielle et Data Science (en alternance)</h4>
@@ -191,7 +191,7 @@ export function AboutSection() {
                   <div className="pt-2">
                     <h5 className="text-md mb-3">Soft Skills</h5>
                     <div className="flex flex-wrap gap-2">
-                      {['Communication', 'Problem Solving', 'Teamwork', 'Time Management', 'Adaptability'].map((skill) => (
+                      {['Communication', 'Résolution de problèmes', 'Travail d\'équipe', 'Gestion du temps', 'Adaptabilité'].map((skill) => (
                         <Badge key={skill} variant="outline" className="text-xs">
                           {skill}
                         </Badge>

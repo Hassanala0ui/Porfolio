@@ -13,7 +13,7 @@ interface Project {
   image: string;
   technologies: string[];
   githubUrl: string;
-  category: 'ml' | 'dl' | 'cv' | 'nlp' | 'autoencoder' | 'gan' | 'generativeai' | 'powerbi' ;
+  category: 'ml' | 'dl' | 'cv' | 'nlp' | 'autoencoder' | 'gan' | 'generativeai' | 'powerbi' | 'etl' | 'devops' | 'nosql' | 'dataviz' ;
 }
 
 export function ProjectsSection() {
@@ -21,75 +21,85 @@ export function ProjectsSection() {
     // Machine Learning Projects
     {
       id: 'ml1',
-      title: 'Heart Disease Prediction',
-      description: 'Applied ensemble ML models with preprocessing to improve prediction accuracy for heart disease.',
+      title: 'CinéMatch AI — Système de recommandation de films',
+      description: 'Moteur de recommandation de films basé sur le filtrage collaboratif (K-Nearest Neighbors), exposé via une API REST FastAPI avec interface web interactive. L\'algorithme analyse les patterns de notation des utilisateurs pour suggérer 5 films similaires.',
       image: 'https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWNoaW5lJTIwbGVhcm5pbmclMjBkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3NTYyODk0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Ensemble Methods'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Heart%20Diseases
+      technologies: ['Python', 'Scikit-learn', 'FastAPI', 'KNN', 'Pandas', 'Docker'],
+      githubUrl: 'https://github.com/Hassanala0ui/Movie-Recommendation-System-KNN-FastAPI-',
       category: 'ml'
     },
     {
       id: 'ml2',
-      title: 'Airline Passenger Satisfaction Prediction',
-      description: 'Predicted passenger satisfaction using classification models with feature engineering, and visualized insights and performance using Power BI.',
+      title: 'Prédiction des maladies cardiaques',
+      description: 'Application de modèles ML d\'ensemble avec prétraitement pour améliorer la précision de prédiction des maladies cardiaques.',
       image: 'https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWNoaW5lJTIwbGVhcm5pbmclMjBkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3NTYyODk0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Python', 'ML Classification', 'Feature Engineering', 'Power BI'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Advanced%20Data%20Analytics%20AirLine%20Passenger%20Satisfaction
+      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Méthodes d\'ensemble'],
+      githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Heart%20Diseases
       category: 'ml'
     },
     {
       id: 'ml3',
-      title: 'Liver Disease Prediction',
-      description: 'Developed ML models to predict liver disease from patient records, enabling early detection.',
+      title: 'Prédiction de la satisfaction des passagers aériens',
+      description: 'Prédiction de la satisfaction des passagers à l\'aide de modèles de classification avec ingénierie des caractéristiques, et visualisation des insights et performances avec Power BI.',
       image: 'https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWNoaW5lJTIwbGVhcm5pbmclMjBkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3NTYyODk0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Python', 'Machine Learning', 'Medical Data', 'Early Detection'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Liver%20Disease%20Prediction
+      technologies: ['Python', 'Classification ML', 'Ingénierie des caractéristiques', 'Power BI'],
+      githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Advanced%20Data%20Analytics%20AirLine%20Passenger%20Satisfaction
       category: 'ml'
     },
     {
       id: 'ml4',
-      title: 'Prostate Cancer Risk Prediction',
-      description: 'Built a classifier to assess prostate cancer risk using lifestyle and medical indicators; visualized insights with Power BI.',
+      title: 'Prédiction des maladies hépatiques',
+      description: 'Développement de modèles ML pour prédire les maladies hépatiques à partir des dossiers patients, permettant une détection précoce.',
       image: 'https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWNoaW5lJTIwbGVhcm5pbmclMjBkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3NTYyODk0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Python', 'Classification', 'Health Indicators', 'Power BI'],
+      technologies: ['Python', 'Apprentissage automatique', 'Données médicales', 'Détection précoce'],
+      githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Liver%20Disease%20Prediction
+      category: 'ml'
+    },
+    {
+      id: 'ml5',
+      title: 'Prédiction du risque de cancer de la prostate',
+      description: 'Construction d\'un classifieur pour évaluer le risque de cancer de la prostate à partir d\'indicateurs de mode de vie et médicaux ; visualisation des insights avec Power BI.',
+      image: 'https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWNoaW5lJTIwbGVhcm5pbmclMjBkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3NTYyODk0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      technologies: ['Python', 'Classification', 'Indicateurs de santé', 'Power BI'],
       githubUrl: '',//https://github.com/ahmedashraf792002/ML-Projects/tree/main/Prostate%20Cancer%20Risk%20Prediction%20Using%20Lifestyle%20and%20Health%20Indicators
       category: 'ml'
     },
+    
 
     // Deep Learning Projects
     {
       id: 'dl1',
-      title: 'Brain Tumor Detection from MRI Images',
-      description: 'Trained a CNN to detect brain tumors from MRI scans, aiding in early diagnosis.',
+      title: 'Détection de tumeurs cérébrales par IRM',
+      description: 'Entraînement d\'un CNN pour détecter les tumeurs cérébrales à partir d\'IRM, contribuant au diagnostic précoce.',
       image: 'https://images.unsplash.com/photo-1549925245-f20a1bac6454?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwYnJhaW4lMjBzY2FuJTIwaW1hZ2luZ3xlbnwxfHx8fDE3NTYyOTQ3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['TensorFlow', 'CNN', 'Medical Imaging', 'MRI Analysis'],
+      technologies: ['TensorFlow', 'CNN', 'Imagerie médicale', 'Analyse IRM'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/Brain%20Tumors
       category: 'dl'
     },
     {
       id: 'dl2',
-      title: 'Chest X-Ray Images (Pneumonia) Classification',
-      description: 'Developed a deep learning model to classify chest X-ray images for pneumonia detection using CNN architectures, improving diagnostic accuracy for respiratory diseases.',
+      title: 'Classification de radiographies thoraciques (Pneumonie)',
+      description: 'Développement d\'un modèle de deep learning pour classifier les radiographies thoraciques pour la détection de pneumonie à l\'aide d\'architectures CNN, améliorant la précision diagnostique des maladies respiratoires.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Deep Learning', 'CNN', 'Medical Imaging', 'Classification'],
+      technologies: ['Deep Learning', 'CNN', 'Imagerie médicale', 'Classification'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/Chest%20X-Ray%20Images%20(Pneumonia)
       category: 'dl'
     },
     {
       id: 'dl3',
-      title: 'Speech Recognition System',
-      description: 'Built a DL-based speech-to-text system with noise handling and real-time inference.',
+      title: 'Système de reconnaissance vocale',
+      description: 'Construction d\'un système de transcription parole-texte basé sur le deep learning avec gestion du bruit et inférence en temps réel.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Deep Learning', 'Speech Processing', 'Real-time Inference', 'Noise Handling'],
+      technologies: ['Deep Learning', 'Traitement de la parole', 'Inférence temps réel', 'Gestion du bruit'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/Speech%20Recognition
       category: 'dl'
     },
     {
       id: 'dl4',
-      title: 'Elpv Classification and Quality Evaluation Using Image Analysis',
-      description: 'Implemented deep learning models for electroluminescence photovoltaic (ELpv) cell classification and quality assessment using advanced image analysis techniques for solar panel defect detection.',
+      title: 'Classification ELpv et évaluation de qualité par analyse d\'images',
+      description: 'Implémentation de modèles de deep learning pour la classification de cellules photovoltaïques par électroluminescence et l\'évaluation de qualité à l\'aide de techniques avancées d\'analyse d\'images pour la détection de défauts de panneaux solaires.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Deep Learning', 'Image Analysis', 'Quality Assessment', 'Solar Technology'],
+      technologies: ['Deep Learning', 'Analyse d\'images', 'Évaluation de qualité', 'Technologie solaire'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/Elpv%20Classification%20and%20Quality%20Evaluation%20Using%20Image%20Analysis
       category: 'dl'
     },
@@ -97,104 +107,105 @@ export function ProjectsSection() {
     // Computer Vision Projects
     {
       id: 'cv1',
-      title: 'Bone Fracture Classification using MobileViT Transformer',
-      description: 'Built a MobileViT Transformer model to classify bone fractures from X-ray images, improving diagnostic efficiency.',
+      title: 'Classification de fractures osseuses avec MobileViT Transformer',
+      description: 'Construction d\'un modèle MobileViT Transformer pour classifier les fractures osseuses à partir de radiographies, améliorant l\'efficacité diagnostique.',
       image: 'https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHZpc2lvbiUyMGltYWdlJTIwcmVjb2duaXRpb258ZW58MXx8fHwxNzU2Mjk0NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['MobileViT', 'Transformer', 'Medical Imaging', 'X-ray Analysis'],
+      technologies: ['MobileViT', 'Transformer', 'Imagerie médicale', 'Analyse de radiographies'],
       githubUrl: '',//https://github.com/ahmedashraf792002/CV-Projects/tree/main/Bone%20Fracture%20Classification%20Using%20Mobilevit
       category: 'cv'
     },
     {
       id: 'cv2',
-      title: 'ASL Detection using CycleGAN and Deep Learning',
-      description: 'Used CycleGAN to generate synthetic ASL data and trained a model for real-time sign recognition.',
+      title: 'Détection ASL avec CycleGAN et Deep Learning',
+      description: 'Utilisation de CycleGAN pour générer des données ASL synthétiques et entraînement d\'un modèle pour la reconnaissance des signes en temps réel.',
       image: 'https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHZpc2lvbiUyMGltYWdlJTIwcmVjb2duaXRpb258ZW58MXx8fHwxNzU2Mjk0NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['CycleGAN', 'Deep Learning', 'Real-time Recognition', 'ASL'],
+      technologies: ['CycleGAN', 'Deep Learning', 'Reconnaissance temps réel', 'ASL'],
       githubUrl: '',//https://github.com/ahmedashraf792002/CV-Projects/tree/main/ASL%20Detection%20%26%20Real%20Time
       category: 'cv'
     },
     {
       id: 'cv3',
-      title: 'CT Heart Segmentation Using UNet',
-      description: 'Developed a UNet-based deep learning model for precise heart segmentation from CT scan images, enabling accurate cardiac structure analysis for medical diagnosis and treatment planning.',
+      title: 'Segmentation cardiaque CT avec UNet',
+      description: 'Développement d\'un modèle de deep learning basé sur UNet pour la segmentation précise du cœur à partir d\'images CT, permettant une analyse précise des structures cardiaques pour le diagnostic médical et la planification de traitement.',
       image: 'https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHZpc2lvbiUyMGltYWdlJTIwcmVjb2duaXRpb258ZW58MXx8fHwxNzU2Mjk0NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['UNet', 'Medical Segmentation', 'CT Imaging', 'Cardiac Analysis'],
+      technologies: ['UNet', 'Segmentation médicale', 'Imagerie CT', 'Analyse cardiaque'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/CT%20Heart%20Segmentation%20Using%20UNet
       category: 'cv'
     },
     {
       id: 'cv4',
-      title: 'Retina Blood Vessel Segmentation using U-Net',
-      description: 'Implemented U-Net architecture for precise segmentation of blood vessels in retinal images, supporting ophthalmological diagnosis and diabetic retinopathy detection through advanced medical image processing.',
+      title: 'Segmentation des vaisseaux sanguins rétiniens avec U-Net',
+      description: 'Implémentation de l\'architecture U-Net pour la segmentation précise des vaisseaux sanguins dans les images rétiniennes, soutenant le diagnostic ophtalmologique et la détection de rétinopathie diabétique.',
       image: 'https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHZpc2lvbiUyMGltYWdlJTIwcmVjb2duaXRpb258ZW58MXx8fHwxNzU2Mjk0NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['U-Net', 'Medical Imaging', 'Retinal Analysis', 'Blood Vessel Segmentation'],
+      technologies: ['U-Net', 'Imagerie médicale', 'Analyse rétinienne', 'Segmentation vasculaire'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/%F0%9F%A9%B8Retina%20Blood%20Vessel%20Segmentation%20using%20U-Net%F0%9F%A7%A0%F0%9F%93%88
       category: 'cv'
     },
 
     // NLP Projects
+    
+    {
+      id: 'nlp6',
+      title: 'Milano-Cortina 2026 — Analyse de sentiments sociaux',
+      description: 'Analyse NLP des données sociales autour des JO d\'hiver Milano-Cortina 2026 : extraction de sentiments via TextBlob, traitement de texte multilingue et visualisation interactive des tendances d\'opinion avec Streamlit et Plotly.',
+      image: 'https://images.unsplash.com/photo-1700038778311-0e132fc2e205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGFuZ3VhZ2UlMjBwcm9jZXNzaW5nJTIwdGV4dHxlbnwxfHx8fDE3NTYyOTQ3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      technologies: ['NLP', 'TextBlob', 'Analyse de sentiments', 'Streamlit', 'Python'],
+      githubUrl: 'https://github.com/Hassanala0ui/Milano-2026-social-dashboard',
+      category: 'nlp'
+    },
     {
       id: 'nlp1',
-      title: 'Language Detection System',
-      description: 'Built an NLP classifier to identify the language of given text samples with high precision.',
+      title: 'Système de détection de langue',
+      description: 'Construction d\'un classifieur NLP pour identifier la langue d\'échantillons de texte avec une haute précision.',
       image: 'https://images.unsplash.com/photo-1700038778311-0e132fc2e205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGFuZ3VhZ2UlMjBwcm9jZXNzaW5nJTIwdGV4dHxlbnwxfHx8fDE3NTYyOTQ3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['NLP', 'Text Classification', 'Language Detection', 'Machine Learning'],
+      technologies: ['NLP', 'Classification de texte', 'Détection de langue', 'Apprentissage automatique'],
       githubUrl: '',//https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Language%20Detection  
       category: 'nlp'
     },
     {
-      id: 'nlp2',
-      title: 'Arabic Sentiment Analysis Using Transformers and Sequence Models',
-      description: 'Fine-tuned BERT and trained LSTM to analyze sentiment in Arabic reviews.',
-      image: 'https://images.unsplash.com/photo-1700038778311-0e132fc2e205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGFuZ3VhZ2UlMjBwcm9jZXNzaW5nJTIwdGV4dHxlbnwxfHx8fDE3NTYyOTQ3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['BERT', 'LSTM', 'Arabic NLP', 'Sentiment Analysis'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Arabic%20Sentiment%20Reviews
-      category: 'nlp'
-    },
-    {
       id: 'nlp3',
-      title: 'Paraphrase Classification and Generation Using Transformers',
-      description: 'Used XLNet for paraphrase detection and T5 for generating paraphrases with varied structure.',
+      title: 'Classification et génération de paraphrases avec Transformers',
+      description: 'Utilisation de XLNet pour la détection de paraphrases et T5 pour la génération de paraphrases avec des structures variées.',
       image: 'https://images.unsplash.com/photo-1700038778311-0e132fc2e205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGFuZ3VhZ2UlMjBwcm9jZXNzaW5nJTIwdGV4dHxlbnwxfHx8fDE3NTYyOTQ3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['XLNet', 'T5', 'Transformers', 'Paraphrase Generation'],
+      technologies: ['XLNet', 'T5', 'Transformers', 'Génération de paraphrases'],
       githubUrl: '',//https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Paraphrase%20Classification%20and%20Generation%20Using%20Transformers
       category: 'nlp'
     },
     {
       id: 'nlp4',
-      title: 'Text Classification Using Longformer-FineTuning',
-      description: 'Fine-tuned Longformer transformer model for long document text classification, handling extended sequences effectively for improved accuracy in document categorization tasks.',
+      title: 'Classification de texte avec Longformer-FineTuning',
+      description: 'Fine-tuning du modèle Longformer pour la classification de textes longs, gérant efficacement les séquences étendues pour une meilleure précision dans les tâches de catégorisation de documents.',
       image: 'https://images.unsplash.com/photo-1700038778311-0e132fc2e205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGFuZ3VhZ2UlMjBwcm9jZXNzaW5nJTIwdGV4dHxlbnwxfHx8fDE3NTYyOTQ3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Longformer', 'Fine-tuning', 'Text Classification', 'Long Documents'],
+      technologies: ['Longformer', 'Fine-tuning', 'Classification de texte', 'Documents longs'],
       githubUrl: '',  //https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Text%20Classification%20Using%20Longformer-FineTuning
       category: 'nlp'
     },
     {
       id: 'nlp5',
-      title: 'Amazon Reviews',
-      description: 'Developed a comprehensive sentiment analysis system for Amazon product reviews using deep learning techniques, providing insights into customer satisfaction and product quality assessment.',
+      title: 'Avis Amazon',
+      description: 'Développement d\'un système complet d\'analyse de sentiments pour les avis produits Amazon à l\'aide de techniques de deep learning, fournissant des insights sur la satisfaction client et l\'évaluation de la qualité des produits.',
       image: 'https://images.unsplash.com/photo-1700038778311-0e132fc2e205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGFuZ3VhZ2UlMjBwcm9jZXNzaW5nJTIwdGV4dHxlbnwxfHx8fDE3NTYyOTQ3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Deep Learning', 'Sentiment Analysis', 'Review Processing', 'Amazon Data'],
+      technologies: ['Deep Learning', 'Analyse de sentiments', 'Traitement d\'avis', 'Données Amazon'],
       githubUrl: '',//https://github.com/ahmedashraf792002/DL-Projects/tree/main/Amazon%20Reviews
       category: 'nlp'
     },
 
-    // AutoEncoder Projects
+    /* // AutoEncoder Projects
     {
       id: 'ae1',
-      title: 'Cifar10 Image Colorization',
-      description: 'Implemented an autoencoder-based system for colorizing grayscale CIFAR-10 images, using deep learning techniques to predict and generate realistic color mappings for enhanced image visualization.',
+      title: 'Colorisation d\'images CIFAR-10',
+      description: 'Implémentation d\'un système basé sur les auto-encodeurs pour coloriser les images en niveaux de gris de CIFAR-10, utilisant des techniques de deep learning pour prédire et générer des mappages de couleurs réalistes.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['AutoEncoder', 'Image Colorization', 'CIFAR-10', 'Deep Learning'],
+      technologies: ['Auto-encodeur', 'Colorisation d\'images', 'CIFAR-10', 'Deep Learning'],
       githubUrl: '',//https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Cifar10%20Image%20Colorization
       category: 'autoencoder'
     },
     {
       id: 'ae2',
-      title: 'Visualize Mnist',
-      description: 'Created an autoencoder-based visualization system for MNIST digit dataset, enabling dimensionality reduction and feature representation learning for improved understanding of handwritten digit patterns.',
+      title: 'Visualisation MNIST',
+      description: 'Création d\'un système de visualisation basé sur les auto-encodeurs pour le jeu de données MNIST, permettant la réduction de dimensionnalité et l\'apprentissage de représentations pour une meilleure compréhension des motifs de chiffres manuscrits.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['AutoEncoder', 'MNIST', 'Visualization', 'Dimensionality Reduction'],
+      technologies: ['Auto-encodeur', 'MNIST', 'Visualisation', 'Réduction de dimensionnalité'],
       githubUrl: '',//https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Visualize%20Mnist
       category: 'autoencoder'
     },
@@ -202,48 +213,49 @@ export function ProjectsSection() {
     // GAN Projects
     {
       id: 'gan1',
-      title: 'Cycle GAN For ASL',
-      description: 'Implemented CycleGAN for American Sign Language (ASL) image-to-image translation, enabling domain adaptation and data augmentation for improved ASL recognition and gesture understanding.',
+      title: 'CycleGAN pour ASL',
+      description: 'Implémentation de CycleGAN pour la traduction d\'images de langue des signes américaine (ASL), permettant l\'adaptation de domaine et l\'augmentation de données pour une meilleure reconnaissance des gestes.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['CycleGAN', 'ASL', 'Image Translation', 'Domain Adaptation'],
+      technologies: ['CycleGAN', 'ASL', 'Traduction d\'images', 'Adaptation de domaine'],
       githubUrl: '',//https://github.com/ahmedashraf792002/GAN-Projects/tree/main/Cycle%20GAN%20For%20ASL
       category: 'gan'
     },
     {
       id: 'gan2',
-      title: 'DCGAN For Fashion Mnist',
-      description: 'Developed a Deep Convolutional GAN (DCGAN) for generating realistic fashion items using Fashion-MNIST dataset, creating synthetic clothing images for data augmentation and fashion design applications.',
+      title: 'DCGAN pour Fashion MNIST',
+      description: 'Développement d\'un GAN convolutionnel profond (DCGAN) pour générer des articles de mode réalistes à partir du jeu Fashion-MNIST, créant des images synthétiques de vêtements pour l\'augmentation de données et le design de mode.',
       image: 'https://images.unsplash.com/photo-1645839078449-124db8a049fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyYWwlMjBuZXR3b3JrJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwxfHx8fDE3NTYyOTQ3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['DCGAN', 'Fashion-MNIST', 'Image Generation', 'Fashion Design'],
+      technologies: ['DCGAN', 'Fashion-MNIST', 'Génération d\'images', 'Design de mode'],
       githubUrl: '',//https://github.com/ahmedashraf792002/GAN-Projects/tree/main/DCGAN%20For%20Fashion%20Minst
       category: 'gan'
     },
+    */
 
     // Generative AI Projects
     {
       id: 'genai1',
       title: 'LLAMA_3_1 RAG Doc QA ChromaDB',
-      description: 'Built a Retrieval-Augmented Generation (RAG) system using LLAMA 3.1 and ChromaDB for intelligent document question-answering, enabling efficient knowledge extraction from large document collections.',
+      description: 'Construction d\'un système de génération augmentée par récupération (RAG) utilisant LLAMA 3.1 et ChromaDB pour la réponse intelligente aux questions sur des documents, permettant une extraction efficace des connaissances.',
       image: 'https://images.unsplash.com/photo-1678347123725-2d0d31bc06bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5lcmF0aXZlJTIwYWklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8fHx8MTc1NjI5NDc0Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['LLAMA 3.1', 'RAG', 'ChromaDB', 'Document QA'],
+      technologies: ['LLAMA 3.1', 'RAG', 'ChromaDB', 'QA documentaire'],
       githubUrl: '',//https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Doc%20QA%20ChromaDB
       category: 'generativeai'
     },
     {
       id: 'genai2',
       title: 'LLAMA_3_1 RAG Multi Doc QA Streamlit',
-      description: 'Created a multi-document RAG system with LLAMA 3.1 and Streamlit interface, allowing users to query across multiple documents simultaneously for comprehensive knowledge retrieval and analysis.',
+      description: 'Création d\'un système RAG multi-documents avec LLAMA 3.1 et interface Streamlit, permettant aux utilisateurs d\'interroger simultanément plusieurs documents pour une recherche et analyse complète des connaissances.',
       image: 'https://images.unsplash.com/photo-1678347123725-2d0d31bc06bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5lcmF0aXZlJTIwYWklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8fHx8MTc1NjI5NDc0Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['LLAMA 3.1', 'RAG', 'Streamlit', 'Multi-Document QA'],
+      technologies: ['LLAMA 3.1', 'RAG', 'Streamlit', 'QA multi-documents'],
       githubUrl: '',//https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Multi%20Doc%20QA%20Streamlit
       category: 'generativeai'
     },
     {
       id: 'genai3',
-      title: 'Document Summarizer with LlamaIndex & Llama 3',
-      description: 'Developed an advanced document summarization system using LlamaIndex and Llama 3, providing intelligent text summarization capabilities for efficient information extraction and content analysis.',
+      title: 'Résumeur de documents avec LlamaIndex & Llama 3',
+      description: 'Développement d\'un système avancé de résumé de documents utilisant LlamaIndex et Llama 3, offrant des capacités intelligentes de résumé de texte pour une extraction efficace d\'informations et une analyse de contenu.',
       image: 'https://images.unsplash.com/photo-1678347123725-2d0d31bc06bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5lcmF0aXZlJTIwYWklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8fHx8MTc1NjI5NDc0Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['LlamaIndex', 'Llama 3', 'Document Summarization', 'NLP'],
+      technologies: ['LlamaIndex', 'Llama 3', 'Résumé de documents', 'NLP'],
       githubUrl: '',//https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/Document%20Summarizer%20with%20LlamaIndex%20%26%20Llama%203
       category: 'generativeai'
     },
@@ -251,30 +263,74 @@ export function ProjectsSection() {
     // PowerBI Projects
     {
       id: 'pbi1',
-      title: 'Airline Passenger Satisfaction Report',
-      description: 'Created comprehensive Power BI dashboards analyzing airline passenger satisfaction metrics, providing insights into service quality, customer feedback, and operational performance for strategic decision-making.',
+      title: 'Tableau de bord Satisfaction des passagers aériens',
+      description: 'Création de tableaux de bord Power BI complets analysant les indicateurs de satisfaction des passagers aériens, offrant des insights sur la qualité de service, les retours clients et la performance opérationnelle pour une prise de décision stratégique.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYyOTQ3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Power BI', 'Data Visualization', 'Customer Analytics', 'Dashboard Design'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Airline%20Passenger%20Satisfaction%20Report
+      technologies: ['Power BI', 'Visualisation de données', 'Analyse client', 'Conception de tableaux de bord'],
+      githubUrl: 'https://github.com/Hassanala0ui/Airline-Passenger-Satisfaction-Report',
       category: 'powerbi'
     },
     {
       id: 'pbi2',
-      title: 'Healthcare Provider Dashboard',
-      description: 'Developed an interactive healthcare analytics dashboard using Power BI, tracking patient outcomes, resource utilization, and operational KPIs to support healthcare management and improve patient care delivery.',
+      title: 'Tableau de bord Prestataire de santé',
+      description: 'Développement d\'un tableau de bord interactif d\'analyse de santé avec Power BI, suivant les résultats des patients, l\'utilisation des ressources et les KPIs opérationnels pour améliorer la gestion hospitalière et la qualité des soins.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYyOTQ3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Power BI', 'Healthcare Analytics', 'KPI Tracking', 'Patient Outcomes'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Healthcare%20provider%20Dashboard
+      technologies: ['Power BI', 'Analyse de santé', 'Suivi des KPI', 'Résultats patients'],
+      githubUrl: 'https://github.com/Hassanala0ui/Healthcare_Provider_Dashboard',
       category: 'powerbi'
     },
     {
       id: 'pbi3',
-      title: 'The AI, ML, Data Science Salary Analysis',
-      description: 'Built comprehensive salary analysis dashboard for AI, ML, and Data Science roles using Power BI, providing market insights, compensation trends, and career guidance for tech professionals.',
+      title: 'Tableau de bord Prédiction du risque de cancer de la prostate',
+      description: 'Conception d\'un tableau de bord Power BI pour visualiser les facteurs de risque du cancer de la prostate basés sur le mode de vie et les indicateurs de santé, permettant une évaluation précoce des risques et des stratégies de prévention.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYyOTQ3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Power BI', 'Salary Analysis', 'Data Science', 'Market Research'],
-      githubUrl: '',//https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/The%20AI%2C%20ML%2C%20Data%20Science%20Salary%20Analysis
+      technologies: ['Power BI', 'Analyse de santé', 'Prédiction de risques', 'Visualisation de données'],
+      githubUrl: 'https://github.com/Hassanala0ui/Dashboard_Prostate_Cancer_Risk_Prediction',
       category: 'powerbi'
+    },
+
+    // NoSQL Projects
+    {
+      id: 'nosql1',
+      title: 'Milano-Cortina 2026 — Social Intelligence Dashboard',
+      description: 'Dashboard d\'analyse de données sociales autour des JO d\'hiver Milano-Cortina 2026, combinant MongoDB (stockage documentaire), Neo4j (graphe de relations sociales) et NLP (analyse de sentiments via TextBlob). Interface interactive Streamlit avec visualisations Plotly et graphes PyVis pour l\'exploration des réseaux sociaux.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYyOTQ3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      technologies: ['MongoDB', 'Neo4j', 'Streamlit', 'Python', 'NLP', 'Plotly'],
+      githubUrl: 'https://github.com/Hassanala0ui/Milano-2026-social-dashboard',
+      category: 'nosql'
+    },
+
+    // DevOps / Docker Projects
+    {
+      id: 'devops1',
+      title: 'Todo List Microservices — Docker Compose, FastAPI & React',
+      description: 'Déploiement d\'une application multi-conteneurs avec Docker Compose : 3 services (FastAPI, React/Nginx, PostgreSQL 16) communiquant via un réseau Docker personnalisé. Mise en place de health checks, gestion sécurisée des secrets Docker, builds multi-stage et orchestration complète de l\'infrastructure conteneurisée.',
+      image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2NrZXIlMjBjb250YWluZXIlMjBtaWNyb3NlcnZpY2VzfGVufDF8fHx8MTc1NjI5NDc0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+      technologies: ['Docker', 'Docker Compose', 'FastAPI', 'PostgreSQL', 'Nginx', 'Microservices'],
+      githubUrl: 'https://github.com/Hassanala0ui/Todo-List-Microservices---FastAPI-React-PostgreSQL',
+      category: 'devops'
+    },
+
+    // Data Visualization Projects (Tableau)
+    {
+      id: 'dataviz1',
+      title: 'Analyse de l\'Accidentalité Routière en France — Tableau',
+      description: 'Étude exploratoire de l\'accidentalité routière en France à partir des données ouvertes data.gouv.fr, déclinée en 3 tableaux de bord Tableau : (1) carte de densité géographique révélant les zones de forte accidentalité par département (Île-de-France, Lyon, Marseille), (2) heatmap temporelle identifiant les créneaux les plus accidentogènes — pic entre 17h et 19h —, et (3) analyse météorologique démontrant que 76,8% des accidents surviennent par temps normal. Des insights décisionnels clés pour orienter les politiques de prévention routière.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYyOTQ3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      technologies: ['Tableau', 'Data Visualization', 'data.gouv.fr', 'Analyse géospatiale', 'Heatmap', 'Open Data'],
+      githubUrl: 'https://github.com/Hassanala0ui/Dashboards-de-R-partition-des-accidents',
+      category: 'dataviz'
+    },
+
+    // ETL Projects
+    {
+      id: 'etl1',
+      title: 'Pipeline ETL — Dépenses USD/CAD avec Oracle & Python',
+      description: 'Pipeline ETL complet extrayant des données financières depuis l\'API de la Banque du Canada et un fichier Excel, les transformant via Python (petl) et PL/SQL, puis les chargeant dans une base Oracle avec procédures stockées et vues analytiques.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYyOTQ3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      technologies: ['Python', 'Oracle DB', 'PL/SQL', 'petl', 'API REST', 'ETL'],
+      githubUrl: 'https://github.com/Hassanala0ui/ETL-pipeline',
+      category: 'etl'
     },
 
     // Graduation Project
@@ -290,15 +346,19 @@ export function ProjectsSection() {
   ];
 
   const categories = [
-    { id: 'all', label: 'All Projects', count: projects.length },
+    { id: 'all', label: 'Tous les projets', count: projects.length },
     { id: 'ml', label: 'ML', count: projects.filter(p => p.category === 'ml').length },
+    { id: 'etl', label: 'ETL', count: projects.filter(p => p.category === 'etl').length },
+    { id: 'devops', label: 'DevOps', count: projects.filter(p => p.category === 'devops').length },
+    { id: 'nosql', label: 'NoSQL', count: projects.filter(p => p.category === 'nosql').length },
+    { id: 'dataviz', label: 'Tableau', count: projects.filter(p => p.category === 'dataviz').length },
+    { id: 'nlp', label: 'NLP', count: projects.filter(p => p.category === 'nlp').length },
     { id: 'dl', label: 'DL', count: projects.filter(p => p.category === 'dl').length },
     { id: 'cv', label: 'CV', count: projects.filter(p => p.category === 'cv').length },
-    { id: 'nlp', label: 'NLP', count: projects.filter(p => p.category === 'nlp').length },
-    { id: 'autoencoder', label: 'AutoEncoder', count: projects.filter(p => p.category === 'autoencoder').length },
-    { id: 'gan', label: 'GAN', count: projects.filter(p => p.category === 'gan').length },
-    { id: 'generativeai', label: 'Generative AI', count: projects.filter(p => p.category === 'generativeai').length },
-    { id: 'powerbi', label: 'PowerBI', count: projects.filter(p => p.category === 'powerbi').length },
+    //{ id: 'autoencoder', label: 'AutoEncoder', count: projects.filter(p => p.category === 'autoencoder').length },
+    //{ id: 'gan', label: 'GAN', count: projects.filter(p => p.category === 'gan').length },
+    { id: 'generativeai', label: 'IA Générative', count: projects.filter(p => p.category === 'generativeai').length },
+    { id: 'powerbi', label: 'Power BI', count: projects.filter(p => p.category === 'powerbi').length },
     //{ id: 'graduation', label: 'Graduation', count: projects.filter(p => p.category === 'graduation').length }
   ];
 
@@ -307,10 +367,14 @@ export function ProjectsSection() {
     dl: '',//https://github.com/ahmedashraf792002/DL-Projects
     cv: '',//https://github.com/ahmedashraf792002/CV-Projects
     nlp: '',//https://github.com/ahmedashraf792002/NLP-Projects
-    autoencoder: '',//https://github.com/ahmedashraf792002/AutoEncoder-Projects
-    gan: '',//https://github.com/ahmedashraf792002/GAN-Projects
+    //autoencoder: '',//https://github.com/ahmedashraf792002/AutoEncoder-Projects
+    //gan: '',//https://github.com/ahmedashraf792002/GAN-Projects
     generativeai: '',//https://github.com/ahmedashraf792002/Generative-AI-Projects
     powerbi: '',//https://github.com/ahmedashraf792002/PowerBI-Projects
+    etl: 'https://github.com/Hassanala0ui/ETL-pipeline',
+    devops: 'https://github.com/Hassanala0ui/Todo-List-Microservices---FastAPI-React-PostgreSQL',
+    nosql: 'https://github.com/Hassanala0ui/Milano-2026-social-dashboard',
+    dataviz: 'https://github.com/Hassanala0ui/Dashboards-de-R-partition-des-accidents',
    // graduation: '',//https://github.com/ahmedashraf792002/Leader-Graduation-Project
   };
 
@@ -356,7 +420,7 @@ export function ProjectsSection() {
             ))}
             {project.technologies.length > 4 && (
               <Badge variant="secondary" className="text-xs">
-                +{project.technologies.length - 4} more
+                +{project.technologies.length - 4} de plus
               </Badge>
             )}
           </div>
@@ -389,12 +453,23 @@ export function ProjectsSection() {
           rel="noopener noreferrer"
         >
           <Github className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
-          View More {category.toUpperCase()} Projects
+          Voir plus de projets {category.toUpperCase()}
           <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </a>
       </Button>
     </motion.div>
   );
+
+  // Ordre de mise en avant : projets avec GitHub, classés par robustesse
+  const featuredOrder = ['devops1', 'nosql1', 'etl1', 'dataviz1', 'ml5', 'nlp6', 'pbi1', 'pbi2', 'pbi3'];
+  const sortedProjects = [...projects].sort((a, b) => {
+    const aIdx = featuredOrder.indexOf(a.id);
+    const bIdx = featuredOrder.indexOf(b.id);
+    if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
+    if (aIdx !== -1) return -1;
+    if (bIdx !== -1) return 1;
+    return 0;
+  });
 
   const AllProjectsButton = () => (
     <motion.div
@@ -439,7 +514,7 @@ export function ProjectsSection() {
         </motion.div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 lg:grid-cols-10 mb-16 bg-muted/50 p-1 h-auto">
+          <TabsList className="flex flex-wrap justify-center gap-2 mb-16 bg-muted/50 p-2 h-auto w-full">
             {categories.map((category) => (
               <TabsTrigger 
                 key={category.id} 
@@ -458,14 +533,14 @@ export function ProjectsSection() {
 
           <TabsContent value="all" className="mt-0">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.slice(0, 12).map((project) => (
+              {sortedProjects.slice(0, 12).map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
               <AllProjectsButton />
             </div>
           </TabsContent>
 
-          {['ml', 'dl', 'cv', 'nlp', 'autoencoder', 'gan', 'generativeai', 'powerbi'].map((category) => (
+          {['ml', 'etl', 'devops', 'nosql', 'dataviz', 'nlp', 'dl', 'cv', 'generativeai', 'powerbi'].map((category) => (
             <TabsContent key={category} value={category} className="mt-0">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects

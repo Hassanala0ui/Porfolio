@@ -36,9 +36,9 @@ export function Header({ activeSection }: HeaderProps) {
 
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'Accueil', href: '#home' },
+    { name: 'À Propos', href: '#about' },
+    { name: 'Projets', href: '#projects' },
     { name: 'CV', href: '#cv' },
     { name: 'Contact', href: '#contact' }
   ];
@@ -76,7 +76,7 @@ export function Header({ activeSection }: HeaderProps) {
             </div>
             <div>
               <div className="text-lg tracking-tight">Hassan Alaoui Taibi</div>
-              <div className="text-xs text-muted-foreground">Data Science & AI Engineer</div>
+              <div className="text-xs text-muted-foreground">Ingénieur Data Science & IA</div>
             </div>
           </motion.div>
           
@@ -134,7 +134,7 @@ export function Header({ activeSection }: HeaderProps) {
               ) : (
                 <Menu className="h-4 w-4" />
               )}
-              <span className="sr-only">Toggle menu</span>
+              <span className="sr-only">Menu</span>
             </Button>
           </div>
         </div>

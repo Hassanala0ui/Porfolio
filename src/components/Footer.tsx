@@ -16,7 +16,7 @@ export function Footer() {
         >
           <div className="text-2xl tracking-tight">Hassan Alaoui Taibi</div>
           <div className="text-sm text-muted-foreground">
-            AI & ML Engineer
+            Ingénieur IA & Data Science
           </div>
           <div className="text-xs text-muted-foreground max-w-md mx-auto">
             Ce portfolio témoigne de ma passion pour l'intelligence artificielle et la data science. Conçu avec React, Tailwind CSS, et une grande conviction quant au potentiel de l'IA.
