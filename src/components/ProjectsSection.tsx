@@ -20,6 +20,14 @@ export function ProjectsSection() {
   const projects: Project[] = [
     // Machine Learning Projects
     {
+      id: 'ml-adeco',
+      title: 'Adeco — Publicité ciblée responsable avec IA',
+      description: `Projet hackathon ESIEA : ciblage publicitaire responsable par IA. Prédiction de la probabilité de clic d'une publicité (XGBoost), filtrage des impressions peu pertinentes pour réduire l'intrusion et l'empreinte CO₂. Dashboard Streamlit interactif (CTR, filtrage, estimation CO₂). Stack : Python, pandas, numpy, scikit-learn, XGBoost, Streamlit, Plotly, joblib, pyarrow.`,
+      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXJ0aWNsZXMlMjBwdWJsaWNpdGFpcmVzfGVufDF8fHx8MTc1NjI5NDc0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+      technologies: ['Python', 'XGBoost', 'Streamlit', 'Plotly', 'scikit-learn', 'pandas', 'numpy', 'joblib', 'pyarrow'],
+      githubUrl: 'https://github.com/Hassanala0ui/Adeco',
+      category: 'ml'
+    },{
       id: 'ml1',
       title: 'CinéMatch AI — Système de recommandation de films',
       description: 'Moteur de recommandation de films basé sur le filtrage collaboratif (KNN), exposé via une API REST FastAPI avec interface web interactive. Precision@5 de 76% sur MovieLens 100K — l\'algorithme analyse les patterns de notation pour suggérer 5 films similaires.',
@@ -28,6 +36,7 @@ export function ProjectsSection() {
       githubUrl: 'https://github.com/Hassanala0ui/Movie-Recommendation-System-KNN-FastAPI-',
       category: 'ml'
     },
+
     {
       id: 'ml2',
       title: 'Prédiction des maladies cardiaques',
